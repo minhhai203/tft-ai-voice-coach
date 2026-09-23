@@ -1,0 +1,52 @@
+{
+  "manifest_version": "1",
+  "type": "WebApp",
+  "meta": {
+    "name": "TFT AI Voice Coach",
+    "version": "1.0.0",
+    "minimum-overwolf-version": "0.92.300.0",
+    "author": "minhhai203",
+    "icon": "icon.png",
+    "icon_gray": "icon_gray.png",
+    "description": "Real-time AI Voice Coach & Transparent In-Game Overlay for TFT powered by Jev (TypeSafe AI) and Ultra-Low Latency Voice"
+  },
+  "data": {
+    "start_window": "background",
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [5426]
+    },
+    "windows": {
+      "background": {
+        "file": "src/background/background.html",
+        "is_background_page": true
+      },
+      "overlay": {
+        "file": "src/overlay/overlay.html",
+        "transparent": true,
+        "clickthrough": true,
+        "resizable": false,
+        "show_in_taskbar": false,
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "start_position": {
+          "Top": 0,
+          "Left": 0
+        },
+        "in_game_only": true
+      }
+    },
+    "game_events": [5426],
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [5426]
+        },
+        "start_minimized": false
+      }
+    ]
+  }
+}

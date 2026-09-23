@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TFT AI Voice Coach Overlay</title>
+  <link rel="stylesheet" href="overlay.css" />
+</head>
+<body>
+  <div id="overlay-container">
+    <!-- Top-Right Coach Widget -->
+    <div id="coach-hud" class="hud-card">
+      <div class="hud-header">
+        <div class="hud-title">
+          <span class="pulsing-dot"></span>
+          TFT AI COACH
+        </div>
+        <span class="hud-badge" id="hud-status">ACTIVE</span>
+      </div>
+
+      <div id="advice-list" class="advice-container">
+        <div class="advice-card info">
+          <div class="advice-title">Hệ thống sẵn sàng</div>
+          <div class="advice-body">Đang lắng nghe trận đấu thời gian thực...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Screen Highlight Elements -->
+    <div id="augment-highlighter" class="highlight-frame hidden">
+      <span class="frame-tag">GỢI Ý LÕI TỐT NHẤT</span>
+    </div>
+
+    <div id="level-button-highlighter" class="highlight-glow hidden">
+      UP CẤP
+    </div>
+  </div>
+
+  <script src="overlay.js"></script>
+</body>
+</html>

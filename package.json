@@ -1,0 +1,24 @@
+{
+  "name": "tft-ai-voice-coach",
+  "version": "1.0.0",
+  "description": "Real-time AI Voice Coach & Transparent In-Game Overlay for Teamfight Tactics using Jev (TypeSafe AI) and Local Voice Engine",
+  "main": "src/background/background.js",
+  "scripts": {
+    "test:mock": "node test/mock_game_events.js",
+    "start": "echo 'Load this folder in Overwolf Developer Tools to run in-game!'"
+  },
+  "keywords": [
+    "tft",
+    "teamfight-tactics",
+    "overwolf",
+    "jev",
+    "typesafe-ai",
+    "voice-coach",
+    "overlay"
+  ],
+  "author": "minhhai203",
+  "license": "MIT",
+  "dependencies": {
+    "@typesafe-ai/sdk": "^0.1.0"
+  }
+}
